@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+.game {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 80px;
+}
+
+.game img {
+	width: 400px;
+}
+
+.game button {
+	color: white;
+	font-weight: 700;
+	background-color: #27ae60;
+	border: none;
+	padding: 15px 20px;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+.letters {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.letters .letter {
+	background-color: rgb(230, 242, 255);
+	font-size: 20px;
+	font-weight: 700;
+	color: dodgerblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border: 1px solid dodgerblue;
+	border-radius: 3px;
+}
+
+.guess {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
