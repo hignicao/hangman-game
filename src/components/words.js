@@ -1,4 +1,4 @@
-const palavras = [
+const words = [
 	"abacate",
 	"abacaxi",
 	"abelha",
@@ -232,4 +232,4 @@ const palavras = [
 	"zumbido",
 ];
 
-export default palavras;
+export default words;

@@ -1,16 +1,11 @@
-import forca0 from "../images/forca0.png";
-// import forca1 from '../images/forca1.png';
-// import forca2 from '../images/forca2.png';
-// import forca3 from '../images/forca3.png';
-// import forca4 from '../images/forca4.png';
-// import forca5 from '../images/forca5.png';
-// import forca6 from '../images/forca6.png';
-
-export default function Game() {
+export default function Game({ start, setStart, wordLetters, lettersGuessed, forca }) {
 	return (
 		<div className="game">
-			<img src={forca0} alt="Forca vazia" />
-			<button>Escolher Palavra</button>
+			<img src={forca} alt="Forca vazia" />
+			<div className="button-word">
+				<button onClick={() => setStart(true)}>Sortear Palavra</button>
+				<div className={start ? "word" : "hidden"}>{wordLetters.map((l) => (lettersGuessed.includes(l) ? <span className="word-letter"> {l} </span> : <span className="word-letter"> _ </span>))}</div>
+			</div>
 		</div>
 	);
 }

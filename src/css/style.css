@@ -4,40 +4,60 @@
 }
 
 main {
-	margin: 0 auto;
-	max-width: 700px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .game {
+	height: 525px;
+	width: 700px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: flex-start;
-	gap: 80px;
+}
+
+.game .button-word {
+	padding-top: 40px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 
 .game img {
-	width: 400px;
+	height: 100%;
 }
 
-.game button {
+.game .button-word button {
 	color: white;
+	font-size: 16px;
 	font-weight: 700;
-	background-color: #27ae60;
+	background-color: #239b55;
 	border: none;
 	padding: 15px 20px;
-	border-radius: 10px;
-	margin-top: 30px;
+	border-radius: 8px;
+}
+
+.game .button-word .word .word-letter {
+	font-size: 40px;
+	font-weight: 500;
 }
 
 .letters {
+	width: 664px;
 	margin-top: 30px;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: 12px;
 }
 
 .letters .letter {
-	background-color: rgb(230, 242, 255);
+	background-color: rgba(91, 173, 255, 0.349);
 	font-size: 20px;
 	font-weight: 700;
 	color: dodgerblue;
@@ -50,9 +70,40 @@ main {
 	border-radius: 3px;
 }
 
+.letters .letter.disabled {
+	background-color: rgb(129, 129, 129);
+	color: black;
+	border: 1px solid black;
+}
+
 .guess {
 	margin-top: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 10px;
+}
+
+.guess label {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.guess input {
+	height: 35px;
+}
+
+.guess button {
+	background-color: rgb(230, 242, 255);
+	font-size: 16px;
+	font-weight: 700;
+	color: dodgerblue;
+	border: 1px solid dodgerblue;
+	border-radius: 3px;
+	padding: 7px;
+}
+
+
+.hidden {
+	display: none;
 }
