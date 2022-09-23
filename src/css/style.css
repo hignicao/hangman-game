@@ -11,40 +11,17 @@ main {
 	align-items: center;
 }
 
-.game {
-	height: 525px;
-	width: 700px;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-}
-
-.game .button-word {
-	padding-top: 40px;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-end;
-}
-
-.game img {
-	height: 100%;
-}
-
-.game .button-word button {
-	color: white;
-	font-size: 16px;
-	font-weight: 700;
-	background-color: #239b55;
-	border: none;
-	padding: 15px 20px;
-	border-radius: 8px;
-}
-
-.game .button-word .word .word-letter {
-	font-size: 40px;
+.word-letters {
+	font-size: 35px;
 	font-weight: 500;
+}
+
+.word-letters.won {
+	color: #239b55;
+}
+
+.word-letters.lost {
+	color: red;
 }
 
 .letters {
@@ -94,15 +71,14 @@ main {
 }
 
 .guess button {
-	background-color: rgb(230, 242, 255);
+	background-color: #239b55;
 	font-size: 16px;
 	font-weight: 700;
-	color: dodgerblue;
-	border: 1px solid dodgerblue;
+	color: white;
+	border: none;
 	border-radius: 3px;
-	padding: 7px;
+	padding: 8px 10px;
 }
-
 
 .hidden {
 	display: none;
