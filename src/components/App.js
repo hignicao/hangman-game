@@ -65,8 +65,6 @@ export default function App() {
 		}
 	}
 
-	console.log(lettersGuessed)
-
 	return (
 		<main>
 			<h1>Jogo da Forca</h1>
