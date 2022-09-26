@@ -1,7 +1,7 @@
 function Letter({ start, guessLetter, lettersGuessed, letter, k, won, lost }) {
 	const cond = !start || lettersGuessed.includes(letter) || won || lost;
 	return (
-		<button disabled={cond} key={k} onClick={() => guessLetter(letter)} className={cond ? "letter disabled" : "letter"}>
+		<button data-identifier="letter" disabled={cond} key={k} onClick={() => guessLetter(letter)} className={cond ? "letter disabled" : "letter"}>
 			{letter}
 		</button>
 	);
