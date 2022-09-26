@@ -38,8 +38,8 @@ const GameDiv = styled.div`
 	}
 
 	@media (max-width: 768px) {
-		width: 400px;
-		height: 300px;
+		width: 360px;
+		height: 260px;
 	}
 `;
 
@@ -61,11 +61,11 @@ const ButtonWordDiv = styled.div`
 	}
 
 	@media (max-width: 768px) {
-		padding-top: 19px;
+		padding-top: 14px;
 
 		button {
 			font-size: 14px;
-			padding: 10px 15px;
+			padding: 9px 12px;
 		}
 	}
 `;

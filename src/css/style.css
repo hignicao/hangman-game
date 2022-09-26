@@ -103,12 +103,12 @@ main h1 {
 	}
 
 	.word-letters {
-		font-size: 25px;
+		font-size: 22px;
 	}
 
 	.letters {
-		width: 400px;
-		gap: 8px;
+		width: 370px;
+		gap: 5px;
 	}
 
 	.letters .letter {
@@ -118,11 +118,16 @@ main h1 {
 	}
 
 	.guess {
-		gap: 8px;
+		gap: 10px;
 		margin: 20px;
 	}
 
 	.guess label {
-		font-size: 15px;
+		font-size: 14px;
+	}
+
+	.guess .guess-btn {
+		font-size: 14px;
+
 	}
 }
