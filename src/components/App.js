@@ -41,7 +41,7 @@ export default function App() {
 			}
 		});
 
-		setLettersGuessed([...lettersGuessed, ...elements]);
+		setLettersGuessed([...lettersGuessed, ...elements, letter]);
 		if (!wordWithoutAccent.includes(letter)) {
 			setMisses(misses + 1);
 			misses === 5 ? setLost(true) : setLost(false);
@@ -64,6 +64,8 @@ export default function App() {
 			setLost(true);
 		}
 	}
+
+	console.log(lettersGuessed)
 
 	return (
 		<main>
