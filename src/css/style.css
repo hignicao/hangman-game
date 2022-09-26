@@ -96,3 +96,33 @@ main h1 {
 .hidden {
 	display: none;
 }
+
+@media (max-width: 768px) {
+	main h1 {
+		margin-bottom: 40px;
+	}
+
+	.word-letters {
+		font-size: 25px;
+	}
+
+	.letters {
+		width: 400px;
+		gap: 8px;
+	}
+
+	.letters .letter {
+		font-size: 18px;
+		width: 35px;
+		height: 35px;
+	}
+
+	.guess {
+		gap: 8px;
+		margin: 20px;
+	}
+
+	.guess label {
+		font-size: 15px;
+	}
+}

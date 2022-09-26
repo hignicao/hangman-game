@@ -145,7 +145,7 @@ const words = [
 	"povoar",
 	"pólvora",
 	"palhaço",
-	"paróqia",
+	"paróquia",
 	"pano",
 	"princesa",
 	"pizza",

@@ -9,9 +9,18 @@ export default function Game({ start, startGame, wordLetters, lettersGuessed, mi
 				<button onClick={startGame}>Sortear Palavra</button>
 				<div className={start ? "word" : "hidden"}>
 					{wordLetters.map((l, i) =>
-						(lettersGuessed.includes(l) || won || lost ?
-							<span key={i} className={won ? "word-letters won" : lost ? "word-letters lost" : "word-letters"}> {l} </span> :
-							<span key={i} className="word-letters"> _ </span>))}
+						lettersGuessed.includes(l) || won || lost ? (
+							<span key={i} className={won ? "word-letters won" : lost ? "word-letters lost" : "word-letters"}>
+								{" "}
+								{l}{" "}
+							</span>
+						) : (
+							<span key={i} className="word-letters">
+								{" "}
+								_{" "}
+							</span>
+						)
+					)}
 				</div>
 			</ButtonWordDiv>
 		</GameDiv>
@@ -26,6 +35,11 @@ const GameDiv = styled.div`
 	align-items: flex-start;
 	img {
 		height: 100%;
+	}
+
+	@media (max-width: 768px) {
+		width: 400px;
+		height: 300px;
 	}
 `;
 
@@ -44,5 +58,14 @@ const ButtonWordDiv = styled.div`
 		border: none;
 		padding: 15px 20px;
 		border-radius: 8px;
+	}
+
+	@media (max-width: 768px) {
+		padding-top: 19px;
+
+		button {
+			font-size: 14px;
+			padding: 10px 15px;
+		}
 	}
 `;
